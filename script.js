@@ -45,7 +45,8 @@ loadQuiz(curQuiz);
 
 const reloadUI = function() {
     btnSubmit.textContent = 'Reload Quiz';
-    btnSubmit.setAttribute('onclick', 'window.location.reload()');
+//     btnSubmit.setAttribute('onclick', 'window.location.reload()');
+       btnSubmit.setAttribute('onclick', 'window.history.go()');
 };
 
 const displayScores = function() {
